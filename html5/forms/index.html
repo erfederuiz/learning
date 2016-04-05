@@ -1,16 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<!--link href="css/some-stylesheet.css"
-      rel="stylesheet"/ -- >
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Page Title</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script -->
+    <!-- script src="script.js"></script -->
+  </head>
+  <body>
+    <header role="banner">
 
-<!--script src="scripts/some-script.js">
+  		<h1><a class="brand">HTML5 Forms</a></h1>
 
-</script -->
 
-</head>
-<body>
-...
-</body>
+  	</header>
+  	<main role="main">
+
+        <div id="formarea">
+          <form>
+            <p>First Name: <input type="text" name="FirstName" value="Fede"/></p>
+            <p>Last Name: <input type="text" name="LastName" title="Please fill with your last name"/></p>
+            <p>Password: <input type="Password" name="password"/></p>
+            <p>Comments:<br><textarea name="Comments" cols="40" rows="8" maxlength="140">Please add your comments...</textarea></p>
+
+            <p>Which of these do you use often?<br>
+              <input type="checkbox" name="AdobeProduct" value="Photoshop"/>Adobe Photoshop<br>
+              <input type="checkbox" name="AdobeProduct" value="Illustrator"/>Adobe Illustrator<br>
+              <input type="checkbox" name="AdobeProduct" value="Dreamweaver"/>Adobe Dreamweaver<br>
+              <input type="checkbox" name="AdobeProduct" value="InDesign"/>Adobe InDesign<br>
+            </p>
+
+            <p>What Operating Systems do you use?<br>
+              <input type="radio" name="OperatingSystems" value="Windows7"/>Windows 7<br>
+              <input type="radio" name="OperatingSystems" value="Windows8"/>Windows 8<br>
+              <input type="radio" name="OperatingSystems" value="MacMountainLion"/>Mac OSX Mountain Lion<br>
+              <input type="radio" name="OperatingSystems" value="MacMavericks"/>Mac OSX Mavericks<br>
+              <input type="radio" name="OperatingSystems" value="Linux"/>Linux<br>
+            </p>
+
+            <p>What Operating Systems do you use?(List version 1)<br>
+              <select>
+                <option value="Windows7"/>Windows 7</option>
+                <option value="Windows8"/>Windows 8</option>
+                <option value="MacMountainLion" selected/>Mac OSX Mountain Lion</option>
+                <option value="MacMavericks"/>Mac OSX Mavericks</option>
+                <option value="Linux"/>Linux</option>
+              </select>
+            </p>
+
+<!--
+            <p>What Operating Systems do you use?(List version 2)<br>
+              <select size="5" >
+                <option value="Windows7"/>Windows 7</option>
+                <option value="Windows8"/>Windows 8</option>
+                <option value="MacMountainLion" selected/>Mac OSX Mountain Lion</option>
+                <option value="MacMavericks"/>Mac OSX Mavericks</option>
+                <option value="Linux"/>Linux</option>
+              </select>
+            </p>
+            <p>What Operating Systems do you use?(List version 3)<br>
+              <select size="5" multiple>
+                <option value="Windows7"/>Windows 7</option>
+                <option value="Windows8"/>Windows 8</option>
+                <option value="MacMountainLion" selected/>Mac OSX Mountain Lion</option>
+                <option value="MacMavericks"/>Mac OSX Mavericks</option>
+                <option value="Linux"/>Linux</option>
+              </select>
+            </p>
+-->
+<!--  Submit butons version 1
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset info." />
+-->
+            <button type="button">Submit</button><br>
+            <button type="button"><img src="submitbutton.png"></button>
+          </form>
+        </div>
+
+  	</main><!-- End primary page content -->
+  	<aside role="complementary">
+
+  		<h3>Secondary page content</h3>
+
+      <p>Use the <code>aside</code> element if you need to include content that is not central to the focus of the page or is clearly of secondary importance.</p>
+
+  	</aside>
+  	<footer role="contentinfo">
+
+  		<div>Page footer content</div>
+
+  		<small>Copyright &copy; <time datetime="2013">2013</time></small>
+
+  	</footer>
+  </body>
 </html>

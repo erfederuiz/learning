@@ -1,0 +1,2 @@
+Clonado repositorio git (copia no relacionada)
+https://help.github.com/articles/duplicating-a-repository/
